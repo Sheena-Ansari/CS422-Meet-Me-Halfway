@@ -1,0 +1,38 @@
+[
+    {
+      "id": "sample-thai",
+      "name": "SAMPLE Thai",
+      "address": "SAMPLE ADDRESS, Chicago, IL 60607",
+      "lat": 41.8695,
+      "lng": -87.6527,
+      "cuisine": "Thai",
+      "rating": 4.3,
+      "reviewCount": 100,
+      "priceMin": 10,
+      "priceMax": 20,
+      "dietary": { "halal": true, "vegetarian": true, "vegan": false },
+      "hours": { "open": "11:00", "close": "21:00" },
+      "about": "SAMPLE: replace with a real restaurant.",
+      "menu": [{ "item": "Pad Thai", "price": 12 }],
+      "photo": "",
+      "mapsUrl": "https://www.google.com/maps"
+    },
+    {
+      "id": "sample-burger",
+      "name": "SAMPLE Burgers",
+      "address": "SAMPLE ADDRESS, Chicago, IL 60607",
+      "lat": 41.869,
+      "lng": -87.649,
+      "cuisine": "Burgers",
+      "rating": 4.1,
+      "reviewCount": 80,
+      "priceMin": 9,
+      "priceMax": 16,
+      "dietary": { "halal": false, "vegetarian": true, "vegan": true },
+      "hours": { "open": "10:00", "close": "22:00" },
+      "about": "SAMPLE: replace with a real restaurant.",
+      "menu": [{ "item": "Veggie Burger", "price": 11 }],
+      "photo": "",
+      "mapsUrl": "https://www.google.com/maps"
+    }
+  ]
