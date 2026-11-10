@@ -131,6 +131,22 @@ export default function Details() {
               <strong>${item.price}</strong>
             </div>
           ))}
+
+          {r.menuApprox && (
+            <p className="muted">Prices are approximate.</p>
+          )}
+
+          {r.menuUrl && (
+            <a
+              className="btn secondary"
+              style={{ textDecoration: 'none', textAlign: 'center' }}
+              href={r.menuUrl}
+              target="_blank"
+              rel="noreferrer"
+            >
+              See full menu ↗
+            </a>
+          )}
         </>
       )}
 

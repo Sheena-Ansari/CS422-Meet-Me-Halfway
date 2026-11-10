@@ -1,38 +1,662 @@
 [
-    {
-      "id": "sample-thai",
-      "name": "SAMPLE Thai",
-      "address": "SAMPLE ADDRESS, Chicago, IL 60607",
-      "lat": 41.8695,
-      "lng": -87.6527,
-      "cuisine": "Thai",
-      "rating": 4.3,
-      "reviewCount": 100,
-      "priceMin": 10,
-      "priceMax": 20,
-      "dietary": { "halal": true, "vegetarian": true, "vegan": false },
-      "hours": { "open": "11:00", "close": "21:00" },
-      "about": "SAMPLE: replace with a real restaurant.",
-      "menu": [{ "item": "Pad Thai", "price": 12 }],
-      "photo": "",
-      "mapsUrl": "https://www.google.com/maps"
+  {
+    "id": "thai-bowl",
+    "name": "Thai Bowl",
+    "address": "1049 W Taylor St, Chicago, IL 60607",
+    "lat": 41.86936,
+    "lng": -87.653029,
+    "cuisine": "Thai",
+    "rating": 4.3,
+    "reviewCount": 454,
+    "priceMin": 10,
+    "priceMax": 16,
+    "dietary": {
+      "halal": false,
+      "vegetarian": true,
+      "vegan": false
     },
-    {
-      "id": "sample-burger",
-      "name": "SAMPLE Burgers",
-      "address": "SAMPLE ADDRESS, Chicago, IL 60607",
-      "lat": 41.869,
-      "lng": -87.649,
-      "cuisine": "Burgers",
-      "rating": 4.1,
-      "reviewCount": 80,
-      "priceMin": 9,
-      "priceMax": 16,
-      "dietary": { "halal": false, "vegetarian": true, "vegan": true },
-      "hours": { "open": "10:00", "close": "22:00" },
-      "about": "SAMPLE: replace with a real restaurant.",
-      "menu": [{ "item": "Veggie Burger", "price": 11 }],
-      "photo": "",
-      "mapsUrl": "https://www.google.com/maps"
-    }
-  ]
+    "hours": {
+      "open": "11:00",
+      "close": "19:30"
+    },
+    "about": "Small Taylor Street spot for Thai noodles, curries and rice dishes, with tofu options.",
+    "menu": [
+      {
+        "item": "Pad Thai",
+        "price": 12
+      },
+      {
+        "item": "Pad See Ew",
+        "price": 12
+      },
+      {
+        "item": "Green Curry",
+        "price": 13
+      },
+      {
+        "item": "Tofu Fried Rice",
+        "price": 11
+      }
+    ],
+    "menuApprox": true,
+    "menuUrl": "https://www.google.com/maps/search/?api=1&query=Thai+Bowl+1049+W+Taylor+St+Chicago&query_place_id=ChIJIS2xdeQsDogR6lM4WLXiLG4",
+    "photo": "",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Thai+Bowl+1049+W+Taylor+St+Chicago&query_place_id=ChIJIS2xdeQsDogR6lM4WLXiLG4"
+  },
+  {
+    "id": "idof",
+    "name": "IDOF - I Dream of Falafel",
+    "address": "1129 W Taylor St, Chicago, IL 60607",
+    "lat": 41.869274,
+    "lng": -87.655404,
+    "cuisine": "Mediterranean",
+    "rating": 4.2,
+    "reviewCount": 549,
+    "priceMin": 10,
+    "priceMax": 16,
+    "dietary": {
+      "halal": true,
+      "vegetarian": true,
+      "vegan": true
+    },
+    "hours": {
+      "open": "11:00",
+      "close": "21:00"
+    },
+    "about": "Fast-casual Mediterranean: build-your-own plates, wraps and hummus bowls. Halal meats and many vegan options.",
+    "menu": [
+      {
+        "item": "Create Your Own Plate",
+        "price": 12.75
+      },
+      {
+        "item": "Create Your Own Bed of Hummus",
+        "price": 12.75
+      },
+      {
+        "item": "All-In Platter",
+        "price": 15.5
+      },
+      {
+        "item": "Falafel (extra)",
+        "price": 3.0
+      }
+    ],
+    "menuApprox": false,
+    "menuUrl": "https://menupages.com/idof-i-dream-of-falafel/1129-w-taylor-st-chicago",
+    "photo": "",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=IDOF+-+I+Dream+of+Falafel+1129+W+Taylor+St+Chicago&query_place_id=ChIJdwU1suMsDogRiA5_wb-dnFE"
+  },
+  {
+    "id": "cairo-kebab",
+    "name": "Cairo Kebab",
+    "address": "730 W Maxwell St, Chicago, IL 60607",
+    "lat": 41.865021,
+    "lng": -87.646281,
+    "cuisine": "Middle Eastern",
+    "rating": 4.8,
+    "reviewCount": 1312,
+    "priceMin": 12,
+    "priceMax": 25,
+    "dietary": {
+      "halal": true,
+      "vegetarian": true,
+      "vegan": false
+    },
+    "hours": {
+      "open": "11:00",
+      "close": "21:00"
+    },
+    "about": "Halal Egyptian and Middle Eastern kitchen near Maxwell Street: kebabs, falafel, hummus and wraps. Closed Mondays.",
+    "menu": [
+      {
+        "item": "Chicken Shawarma Plate",
+        "price": 16
+      },
+      {
+        "item": "Kofta Plate",
+        "price": 17
+      },
+      {
+        "item": "Falafel Wrap",
+        "price": 10
+      },
+      {
+        "item": "Hummus",
+        "price": 8
+      }
+    ],
+    "menuApprox": true,
+    "menuUrl": "https://www.ubereats.com/store/cairo-kebab-maxwell-st/PQ-Iy8bTUsShHxgiDECDdg",
+    "photo": "",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cairo+Kebab+730+W+Maxwell+St+Chicago&query_place_id=ChIJcx6UUeXSD4gRKnrXz_0D0es"
+  },
+  {
+    "id": "ghareeb-nawaz",
+    "name": "Ghareeb Nawaz UIC",
+    "address": "807 W Roosevelt Rd, Chicago, IL 60608",
+    "lat": 41.866595,
+    "lng": -87.647312,
+    "cuisine": "Indian",
+    "rating": 3.9,
+    "reviewCount": 1647,
+    "priceMin": 7,
+    "priceMax": 14,
+    "dietary": {
+      "halal": true,
+      "vegetarian": true,
+      "vegan": false
+    },
+    "hours": {
+      "open": "10:00",
+      "close": "22:00"
+    },
+    "about": "Halal Indian and Pakistani counter-service spot by campus, known for big, cheap biryani plates.",
+    "menu": [
+      {
+        "item": "Chicken Biryani",
+        "price": 9
+      },
+      {
+        "item": "Butter Chicken",
+        "price": 11
+      },
+      {
+        "item": "Chana Masala",
+        "price": 8
+      },
+      {
+        "item": "Daal with Naan",
+        "price": 8
+      }
+    ],
+    "menuApprox": true,
+    "menuUrl": "https://order.online/store/ghareeb-nawaz-express-roosevelt-rd-179401",
+    "photo": "",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ghareeb+Nawaz+UIC+807+W+Roosevelt+Rd+Chicago&query_place_id=ChIJQ5WH6-8sDogRiOSiAaMLbus"
+  },
+  {
+    "id": "bereket",
+    "name": "Bereket Turkish Mediterranean",
+    "address": "333 S Franklin St, Chicago, IL 60606",
+    "lat": 41.877161,
+    "lng": -87.634808,
+    "cuisine": "Middle Eastern",
+    "rating": 4.4,
+    "reviewCount": 1198,
+    "priceMin": 13,
+    "priceMax": 25,
+    "dietary": {
+      "halal": true,
+      "vegetarian": true,
+      "vegan": false
+    },
+    "hours": {
+      "open": "10:00",
+      "close": "22:00"
+    },
+    "about": "Halal-certified Turkish restaurant in the Loop: doner, kebabs, lahmacun and lentil soup.",
+    "menu": [
+      {
+        "item": "Doner Plate",
+        "price": 18
+      },
+      {
+        "item": "Adana Kebab",
+        "price": 21
+      },
+      {
+        "item": "Lahmacun",
+        "price": 13
+      },
+      {
+        "item": "Lentil Soup",
+        "price": 7
+      }
+    ],
+    "menuApprox": true,
+    "menuUrl": "https://slicelife.com/restaurants/il/chicago/60606/bereket-turkish-mediterranean-restaurant/menu",
+    "photo": "",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bereket+Turkish+Mediterranean+333+S+Franklin+St+Chicago&query_place_id=ChIJRWQu36otDogRiuUdoiJ96rg"
+  },
+  {
+    "id": "tuscany",
+    "name": "Tuscany Taylor",
+    "address": "1014 W Taylor St, Chicago, IL 60607",
+    "lat": 41.869596,
+    "lng": -87.651887,
+    "cuisine": "Italian",
+    "rating": 4.6,
+    "reviewCount": 1165,
+    "priceMin": 18,
+    "priceMax": 32,
+    "dietary": {
+      "halal": false,
+      "vegetarian": true,
+      "vegan": false
+    },
+    "hours": {
+      "open": "16:00",
+      "close": "21:00"
+    },
+    "about": "Classic sit-down Italian restaurant on Taylor Street. Dinner only; closed Mondays.",
+    "menu": [
+      {
+        "item": "Spaghetti Bolognese",
+        "price": 22
+      },
+      {
+        "item": "Chicken Parmigiana",
+        "price": 26
+      },
+      {
+        "item": "Margherita Pizza",
+        "price": 18
+      },
+      {
+        "item": "Tiramisu",
+        "price": 10
+      }
+    ],
+    "menuApprox": true,
+    "menuUrl": "https://www.ubereats.com/store/tuscany-on-taylor/zHQZb93eW8u2uGsWl0vELA/",
+    "photo": "",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Tuscany+Taylor+1014+W+Taylor+St+Chicago&query_place_id=ChIJV4wnQOQsDogRdGo2O6bsRVc"
+  },
+  {
+    "id": "als-beef",
+    "name": "Al's #1 Italian Beef",
+    "address": "1079 W Taylor St, Chicago, IL 60607",
+    "lat": 41.869327,
+    "lng": -87.654014,
+    "cuisine": "American",
+    "rating": 4.1,
+    "reviewCount": 2839,
+    "priceMin": 9,
+    "priceMax": 15,
+    "dietary": {
+      "halal": false,
+      "vegetarian": false,
+      "vegan": false
+    },
+    "hours": {
+      "open": "09:00",
+      "close": "23:00"
+    },
+    "about": "Long-running Chicago Italian beef stand on Taylor Street. Closed Sundays.",
+    "menu": [
+      {
+        "item": "Italian Beef Sandwich",
+        "price": 11
+      },
+      {
+        "item": "Italian Sausage",
+        "price": 10
+      },
+      {
+        "item": "Combo (Beef + Sausage)",
+        "price": 13
+      },
+      {
+        "item": "Fries",
+        "price": 4
+      }
+    ],
+    "menuApprox": true,
+    "menuUrl": "https://www.alsbeef.com",
+    "photo": "",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Al%27s+%231+Italian+Beef+1079+W+Taylor+St+Chicago&query_place_id=ChIJ6SVtkeMsDogRhrNdhkJarlY"
+  },
+  {
+    "id": "pompei",
+    "name": "Pompei",
+    "address": "1531 W Taylor St, Chicago, IL 60607",
+    "lat": 41.869161,
+    "lng": -87.665579,
+    "cuisine": "Italian",
+    "rating": 4.4,
+    "reviewCount": 2999,
+    "priceMin": 9,
+    "priceMax": 16,
+    "dietary": {
+      "halal": false,
+      "vegetarian": true,
+      "vegan": false
+    },
+    "hours": {
+      "open": "10:00",
+      "close": "20:00"
+    },
+    "about": "Casual Taylor Street Italian bakery and restaurant: pizza by the slice, pastas and sandwiches.",
+    "menu": [
+      {
+        "item": "Cheese Pizza Slice",
+        "price": 5
+      },
+      {
+        "item": "Lasagna",
+        "price": 13
+      },
+      {
+        "item": "Chicken Parmesan Sandwich",
+        "price": 12
+      },
+      {
+        "item": "Caesar Salad",
+        "price": 10
+      }
+    ],
+    "menuApprox": true,
+    "menuUrl": "https://www.opentable.com/r/pompei-taylor-chicago",
+    "photo": "",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pompei+1531+W+Taylor+St+Chicago&query_place_id=ChIJZ12RrRstDogRNpXqkU2On5s"
+  },
+  {
+    "id": "pazza-pizza",
+    "name": "Pazza Pizza",
+    "address": "1158 W Taylor St, Chicago, IL 60607",
+    "lat": 41.869604,
+    "lng": -87.656519,
+    "cuisine": "Pizza",
+    "rating": 4.6,
+    "reviewCount": 228,
+    "priceMin": 5,
+    "priceMax": 16,
+    "dietary": {
+      "halal": false,
+      "vegetarian": true,
+      "vegan": false
+    },
+    "hours": {
+      "open": "11:00",
+      "close": "01:00"
+    },
+    "about": "Late-night thin-crust pizza and wings on Taylor Street, open until 1 AM most nights.",
+    "menu": [
+      {
+        "item": "Cheese Slice",
+        "price": 4
+      },
+      {
+        "item": "Large Cheese Pizza",
+        "price": 16
+      },
+      {
+        "item": "Pepperoni Slice",
+        "price": 5
+      },
+      {
+        "item": "Wings (6)",
+        "price": 9
+      }
+    ],
+    "menuApprox": true,
+    "menuUrl": "https://www.toasttab.com/local/order/pazza-pizza-2",
+    "photo": "",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pazza+Pizza+1158+W+Taylor+St+Chicago&query_place_id=ChIJwUq8PyctDogR5NTcuuoL-nc"
+  },
+  {
+    "id": "white-palace",
+    "name": "White Palace Grill",
+    "address": "1159 S Canal St, Chicago, IL 60607",
+    "lat": 41.867517,
+    "lng": -87.638978,
+    "cuisine": "American",
+    "rating": 4.2,
+    "reviewCount": 4505,
+    "priceMin": 9,
+    "priceMax": 16,
+    "dietary": {
+      "halal": false,
+      "vegetarian": true,
+      "vegan": false
+    },
+    "hours": {
+      "open": "00:00",
+      "close": "24:00"
+    },
+    "about": "Classic 24-hour Chicago diner on Canal Street: breakfast all day, burgers and plates.",
+    "menu": [
+      {
+        "item": "Pancakes",
+        "price": 10
+      },
+      {
+        "item": "Cheeseburger",
+        "price": 13
+      },
+      {
+        "item": "Gyros Plate",
+        "price": 15
+      },
+      {
+        "item": "Veggie Omelette",
+        "price": 12
+      }
+    ],
+    "menuApprox": true,
+    "menuUrl": "https://order.online/store/-184033/",
+    "photo": "",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=White+Palace+Grill+1159+S+Canal+St+Chicago&query_place_id=ChIJxQqi1uwsDogRGVPqkwQo7F0"
+  },
+  {
+    "id": "greek-islands",
+    "name": "Greek Islands",
+    "address": "200 S Halsted St, Chicago, IL 60661",
+    "lat": 41.879006,
+    "lng": -87.647544,
+    "cuisine": "Mediterranean",
+    "rating": 4.6,
+    "reviewCount": 6085,
+    "priceMin": 15,
+    "priceMax": 30,
+    "dietary": {
+      "halal": false,
+      "vegetarian": true,
+      "vegan": false
+    },
+    "hours": {
+      "open": "11:00",
+      "close": "21:00"
+    },
+    "about": "Large, long-running Greektown restaurant known for saganaki and Greek family-style plates. Closed Mondays.",
+    "menu": [
+      {
+        "item": "Saganaki (flaming cheese)",
+        "price": 12
+      },
+      {
+        "item": "Gyros Plate",
+        "price": 18
+      },
+      {
+        "item": "Spanakopita",
+        "price": 14
+      },
+      {
+        "item": "Greek Salad",
+        "price": 13
+      }
+    ],
+    "menuApprox": true,
+    "menuUrl": "https://order.toasttab.com/online/greek-islands-restaurant-chicago-200-s-halsted-street",
+    "photo": "",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Greek+Islands+200+S+Halsted+St+Chicago&query_place_id=ChIJffLJO8MsDogRLv-ZPBnvROI"
+  },
+  {
+    "id": "two-shades",
+    "name": "Two Shades Cafe",
+    "address": "1152 W Taylor St, Chicago, IL 60607",
+    "lat": 41.86954,
+    "lng": -87.656329,
+    "cuisine": "Cafe",
+    "rating": 4.5,
+    "reviewCount": 295,
+    "priceMin": 6,
+    "priceMax": 14,
+    "dietary": {
+      "halal": false,
+      "vegetarian": true,
+      "vegan": false
+    },
+    "hours": {
+      "open": "07:00",
+      "close": "15:00"
+    },
+    "about": "Neighborhood coffee shop and cafe on Taylor Street with breakfast, sandwiches and salads.",
+    "menu": [
+      {
+        "item": "Latte",
+        "price": 5
+      },
+      {
+        "item": "Breakfast Sandwich",
+        "price": 9
+      },
+      {
+        "item": "Turkey Sandwich",
+        "price": 11
+      },
+      {
+        "item": "Garden Salad",
+        "price": 10
+      }
+    ],
+    "menuApprox": true,
+    "menuUrl": "https://www.doordash.com/store/2558385",
+    "photo": "",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Two+Shades+Cafe+1152+W+Taylor+St+Chicago&query_place_id=ChIJaxnZxBEtDogRviWJKzcqbJc"
+  },
+  {
+    "id": "one-more-sushi",
+    "name": "One More Sushi Express",
+    "address": "1519 W Taylor St, Chicago, IL 60607",
+    "lat": 41.869107,
+    "lng": -87.664916,
+    "cuisine": "Japanese",
+    "rating": 4.9,
+    "reviewCount": 725,
+    "priceMin": 10,
+    "priceMax": 18,
+    "dietary": {
+      "halal": false,
+      "vegetarian": true,
+      "vegan": true
+    },
+    "hours": {
+      "open": "11:00",
+      "close": "21:00"
+    },
+    "about": "Quick, affordable sushi and rolls on west Taylor Street, including vegetable rolls.",
+    "menu": [
+      {
+        "item": "California Roll",
+        "price": 8
+      },
+      {
+        "item": "Spicy Tuna Roll",
+        "price": 9
+      },
+      {
+        "item": "Avocado Roll",
+        "price": 7
+      },
+      {
+        "item": "Sushi Combo",
+        "price": 17
+      }
+    ],
+    "menuApprox": true,
+    "menuUrl": "https://www.doordash.com/store/one-more-sushi-express-26147619/",
+    "photo": "",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=One+More+Sushi+Express+1519+W+Taylor+St+Chicago&query_place_id=ChIJzZDgQUgtDogR21d3pCTEq6w"
+  },
+  {
+    "id": "veggie-house",
+    "name": "Veggie House",
+    "address": "2109 S China Pl, Chicago, IL 60616",
+    "lat": 41.854621,
+    "lng": -87.632796,
+    "cuisine": "Chinese",
+    "rating": 4.6,
+    "reviewCount": 784,
+    "priceMin": 10,
+    "priceMax": 19,
+    "dietary": {
+      "halal": false,
+      "vegetarian": true,
+      "vegan": true
+    },
+    "hours": {
+      "open": "11:30",
+      "close": "21:00"
+    },
+    "about": "Vegetarian Chinese restaurant in Chinatown with many vegan dishes and mock-meat plates. Closed Tuesdays.",
+    "menu": [
+      {
+        "item": "Orange Tofu",
+        "price": 9.75
+      },
+      {
+        "item": "Wonton Soup",
+        "price": 8.75
+      },
+      {
+        "item": "House Salad",
+        "price": 10.5
+      },
+      {
+        "item": "Mapo Tofu",
+        "price": 16.95
+      }
+    ],
+    "menuApprox": false,
+    "menuUrl": "https://menupages.com/veggie-house/2109-s-china-pl-chicago",
+    "photo": "",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Veggie+House+2109+S+China+Pl+Chicago&query_place_id=ChIJYQb_ca8tDogRmMp-PPfgUE8"
+  },
+  {
+    "id": "la-luna",
+    "name": "La Luna",
+    "address": "1726 S Racine Ave, Chicago, IL 60608",
+    "lat": 41.858071,
+    "lng": -87.65665,
+    "cuisine": "Mexican",
+    "rating": 4.7,
+    "reviewCount": 3399,
+    "priceMin": 14,
+    "priceMax": 26,
+    "dietary": {
+      "halal": false,
+      "vegetarian": true,
+      "vegan": false
+    },
+    "hours": {
+      "open": "16:00",
+      "close": "23:00"
+    },
+    "about": "Popular Pilsen Mexican restaurant and bar with tacos, enchiladas and margaritas. Closed Mondays.",
+    "menu": [
+      {
+        "item": "Tacos (3)",
+        "price": 15
+      },
+      {
+        "item": "Enchiladas",
+        "price": 18
+      },
+      {
+        "item": "Guacamole",
+        "price": 12
+      },
+      {
+        "item": "Veggie Fajitas",
+        "price": 19
+      }
+    ],
+    "menuApprox": true,
+    "menuUrl": "https://www.toasttab.com/local/lalunachicago/r-14e494a1-4c0f-4892-914f-8d14a24e8fba",
+    "photo": "",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=La+Luna+1726+S+Racine+Ave+Chicago&query_place_id=ChIJqYUIzlstDogRhpkfbOcPTKg"
+  }
+]

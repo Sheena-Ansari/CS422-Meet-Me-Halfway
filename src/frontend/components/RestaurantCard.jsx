@@ -33,9 +33,12 @@ export default function RestaurantCard({
           </div>
 
           <small>
-            {r.cuisine} ·
-            {r.dietary?.halal ? ' Halal options ·' : ''}
-            {r.dietary?.vegetarian ? ' Vegetarian options' : ''}
+            {[
+              r.cuisine,
+              r.dietary?.halal && 'Halal options',
+              r.dietary?.vegetarian && 'Vegetarian options',
+              r.dietary?.vegan && 'Vegan options',
+            ].filter(Boolean).join(' · ')}
           </small>
 
           <small>
