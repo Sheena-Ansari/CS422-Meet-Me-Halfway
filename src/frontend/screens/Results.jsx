@@ -18,6 +18,16 @@ import {
 } from '../../backend/matching'
 import restaurants from '../../backend/data/restaurants.json'
 
+// Turns { distance: 0, budget: 9, dietary: 3 } into "Budget removed 9 places, Dietary needs removed 3 places."
+function whyText(counts) {
+  const labels = { budget: 'Budget', dietary: 'Dietary needs', distance: 'Distance' }
+  const parts = Object.entries(counts)
+    .filter(([, n]) => n > 0)
+    .sort((a, b) => b[1] - a[1])
+    .map(([k, n]) => `${labels[k]} removed ${n} place${n === 1 ? '' : 's'}`)
+  return parts.length ? parts.join(', ') + '.' : ''
+}
+
 export default function Results() {
   const { code, group, loaded } = useGroup()
   const nav = useNavigate()
@@ -88,7 +98,7 @@ export default function Results() {
         <div className="empty">
           <h3>No places fit everyone yet</h3>
           <p>Try adjusting the group's preferences.</p>
-          <p>{JSON.stringify(whyNoResults(group, restaurants))}</p>
+          <p className="muted">{whyText(whyNoResults(group, restaurants))}</p>
         </div>
       )}
 
