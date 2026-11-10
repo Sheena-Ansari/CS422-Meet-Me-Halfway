@@ -14,19 +14,22 @@ import { useGroup } from '../../backend/useGroup'
 
 export default function Preferences() {
   const { code } = useParams()
-  const nav = useNavigate()
   const { group, memberId } = useGroup(code)
   const member = group?.members?.[memberId]
 
-  const [cuisines, setCuisines] = useState(
-    member?.cuisines || []
-  )
-  const [dietary, setDietary] = useState(
-    member?.dietary || []
-  )
-  const [budget, setBudget] = useState(
-    member?.budget || 20
-  )
+  if (!group || !member) {
+    return <PageState message="Loading preferences..." />
+  }
+
+  // Render the form only once the member is loaded, so it starts with their saved picks
+  return <PreferencesForm key={memberId} code={code} group={group} memberId={memberId} member={member} />
+}
+
+function PreferencesForm({ code, group, memberId, member }) {
+  const nav = useNavigate()
+  const [cuisines, setCuisines] = useState(member.cuisines || [])
+  const [dietary, setDietary] = useState(member.dietary || [])
+  const [budget, setBudget] = useState(member.budget || 20)
 
   function toggleCuisine(value) {
     setCuisines(current =>
@@ -54,10 +57,6 @@ export default function Preferences() {
     })
 
     nav(`/g/${code}/lobby`)
-  }
-
-  if (!group || !member) {
-    return <PageState message="Loading preferences..." />
   }
 
   return (

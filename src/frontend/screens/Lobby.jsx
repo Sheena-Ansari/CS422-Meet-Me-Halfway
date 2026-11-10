@@ -3,6 +3,7 @@
 //   return <div className="todo">Lobby screen (coming soon)</div>
 // }
 
+import { useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import Header from '../components/Header'
 import MemberAvatar from '../components/MemberAvatar'
@@ -15,6 +16,7 @@ export default function Lobby() {
   const { code } = useParams()
   const nav = useNavigate()
   const { group, memberId } = useGroup(code)
+  const [error, setError] = useState('')
 
   if (!group) {
     return <PageState message="Loading group..." />
@@ -26,8 +28,12 @@ export default function Lobby() {
   const allReady = ready === members.length
 
   function findRestaurants() {
-    startBrowsing(code)
-    nav(`/g/${code}/results`)
+    try {
+      startBrowsing(code, memberId)
+      nav(`/g/${code}/results`)
+    } catch (err) {
+      setError(err.message)
+    }
   }
 
   return (
@@ -81,6 +87,8 @@ export default function Lobby() {
           </div>
         ))}
       </div>
+
+      {error && <p className="error">{error}</p>}
 
       {isHost ? (
         <button
